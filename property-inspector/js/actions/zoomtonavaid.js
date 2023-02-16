@@ -6,7 +6,7 @@ function zoomtonavaid(inContext) {
     var piSaveSettings = this.saveSettingsCustom;
 
     let navaid_input = "<div type=\"textarea\" class=\"sdpi-item\" id=\"required_text\">\n" +
-        "    <div class=\"sdpi-item-label\">Some Text</div>\n" +
+        "    <div class=\"sdpi-item-label\">NAVAID</div>\n" +
         "    <span class=\"sdpi-item-value\">\n" +
         "        <input type=\"text\"  id=\"navid\" required></input>\n" +
         "    </span>\n" +

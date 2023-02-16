@@ -6,6 +6,7 @@ use stream_deck_sdk::action::Action;
 use stream_deck_sdk::events::events::KeyEvent;
 use stream_deck_sdk::get_settings;
 use stream_deck_sdk::stream_deck::StreamDeck;
+use async_trait::async_trait;
 use crate::actions::ZoomToNavaid;
 
 pub struct TransferToPosition;
@@ -16,7 +17,7 @@ struct TransferToPositionSettings{
 }
 
 #[async_trait]
-impl Action for ZoomToNavaid{
+impl Action for TransferToPosition{
 	fn uuid(&self) -> &str {
 		"com.alvaro.aurorastream.transfertostation"
 	}
@@ -26,14 +27,14 @@ impl Action for ZoomToNavaid{
 		let callsign = match Aurora::get_selected_traffic() {
 			Ok(callsign) => callsign,
 			Err(error) => {
-				sd.log(format!("[{}] {}", Self::uuid(), error));
+				sd.log(format!("[{}] {}", self.uuid(), error));
 				return ()
 			}
 		};
 
 		let station = match get_settings::<TransferToPositionSettings>(e.payload.settings) {
 			None => {
-				sd.log(format!("[{}] Couldn't fetch settings from streamdeck correctly", Self::uuid()));
+				sd.log(format!("[{}] Couldn't fetch settings from streamdeck correctly", self.uuid()));
 				return ()
 			}
 			Some(settings) => settings.station

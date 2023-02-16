@@ -1,0 +1,35 @@
+{
+  "Actions": [
+    {
+      "Icon": "defaultImage",
+      "Name": "Zoom to Navaid",
+      "States": [
+        {
+          "Image": "defaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "17"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "UUID": "com.alvaro.aurorastream.zoomtonavid"
+    }
+  ],
+  "SDKVersion": 2,
+  "Author": "Alvaro Sierra",
+  "CodePathWin": "aurorastream.exe",
+  "Description": "IVAO Aurora intercom plugin for Stream deck",
+  "Name": "Aurora Stream deck",
+  "Icon": "defaultImage",
+  "Version": "0.1",
+  "PropertyInspectorPath": "PropertyInspector/index.html",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion" : "10"
+    }
+  ],
+  "Software":
+  {
+    "MinimumVersion" : "4.1"
+  }
+}

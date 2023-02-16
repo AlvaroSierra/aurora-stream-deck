@@ -7,7 +7,7 @@ use stream_deck_sdk::get_settings;
 use stream_deck_sdk::stream_deck::StreamDeck;
 use async_trait::async_trait;
 use std::fs::File;
-use std::io::Write;
+use std::io::{Error, Write};
 use std::ops::Deref;
 
 pub struct ZoomToNavaid;
@@ -24,10 +24,20 @@ impl Action for ZoomToNavaid{
 	}
 
 	async fn on_key_down(&self, e: KeyEvent, sd: StreamDeck) {
-		let settings = get_settings::<ZoomToNavidSettings>(e.payload.settings);
 
-		if let Some(settings) = &settings {
-			Aurora::zoom_to_navaid(&settings.navaid).expect("TODO: panic message");
-		}
+		let navaid = match get_settings::<ZoomToNavidSettings>(e.payload.settings){
+			None => {
+				sd.log("Couldn't fetch settings from streamdeck correctly".to_string());
+				return ();
+			}
+			Some(settings) => settings.navaid
+		};
+
+		match Aurora::zoom_to_navaid(&navaid) {
+			Ok(_) => (),
+			Err(a) => {sd.log(a.to_string()).await}
+		};
+
+
 	}
 }

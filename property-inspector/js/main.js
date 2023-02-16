@@ -36,6 +36,9 @@ function connectElgatoStreamDeckSocket(inPort, inUUID, inRegisterEvent, inInfo, 
     if (action === "com.alvaro.aurorastream.zoomtonavid"){
         zoomtonavaid(inUUID)
     }
+    if (action === "com.alvaro.aurorastream.transfertostation"){
+        transfertostation(inUUID)
+    }
 
 }
 

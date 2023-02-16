@@ -12,6 +12,19 @@
       ],
       "SupportedInMultiActions": false,
       "UUID": "com.alvaro.aurorastream.zoomtonavid"
+    },
+    {
+      "Icon": "defaultImage",
+      "Name": "Transfer to position",
+      "States": [
+        {
+          "Image": "defaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "17"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "UUID": "com.alvaro.aurorastream.transfertostation"
     }
   ],
   "SDKVersion": 2,

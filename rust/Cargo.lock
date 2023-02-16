@@ -28,6 +28,7 @@ dependencies = [
 [[package]]
 name = "aurora_api"
 version = "0.1.0"
+source = "git+https://github.com/AlvaroSierra/aurora-api?tag=V0.1.0#6fd6fae96f8aa84bf4cfd065eaac3bff6afb42e6"
 
 [[package]]
 name = "autocfg"

@@ -25,6 +25,45 @@
       ],
       "SupportedInMultiActions": false,
       "UUID": "com.alvaro.aurorastream.transfertostation"
+    },
+    {
+      "Icon": "defaultImage",
+      "Name": "Reject intercom call",
+      "States": [
+        {
+          "Image": "defaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "17"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "UUID": "com.alvaro.aurorastream.intercomreject"
+    },
+    {
+      "Icon": "defaultImage",
+      "Name": "Accept intercom call",
+      "States": [
+        {
+          "Image": "defaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "17"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "UUID": "com.alvaro.aurorastream.intercomaccept"
+    },
+    {
+      "Icon": "defaultImage",
+      "Name": "Call on Intercom",
+      "States": [
+        {
+          "Image": "defaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "17"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "UUID": "com.alvaro.aurorastream.intercomcall"
     }
   ],
   "SDKVersion": 2,

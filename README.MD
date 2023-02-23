@@ -4,7 +4,14 @@ This is an unofficial plugin for the Elgato Streamdeck for IVAO's Aurora ATC cli
 
 # Installation
 
-As of 02/2023, the plugin is not available in the ElGato Marketplace and no pre-release has been published.
+As of 03/2023, the plugin is not available in the ElGato Marketplace.
+
+Installation of development version:
+1. Download the latest release from [releases](https://github.com/AlvaroSierra/aurora-stream-deck/releases)
+2. Unzip the rar into %Appdata%/Elgato/Plugins
+3. Restart the Streamdeck app
+
+If installation has been successful the commands should now appear.
 
 # Issues
 

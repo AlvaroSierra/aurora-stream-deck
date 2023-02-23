@@ -71,8 +71,9 @@
   "CodePathWin": "aurorastream.exe",
   "Description": "IVAO Aurora intercom plugin for Stream deck",
   "Name": "Aurora Stream deck",
+  "URL": "https://github.com/AlvaroSierra/aurora-stream-deck/releases",
   "Icon": "defaultImage",
-  "Version": "0.1",
+  "Version": "0.1.0",
   "PropertyInspectorPath": "PropertyInspector/index.html",
   "OS": [
     {

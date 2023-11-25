@@ -19,5 +19,5 @@ serde_json = "1.0.91"
 serde = "1.0.145"
 aurora_api = { git = "https://github.com/AlvaroSierra/aurora-api", tag="V0.1.1", net.git-fetch-with-cli=true}
 tokio = { version = "1.21.2", features = ["full"] }
-stream_deck_sdk = { git = "https://github.com/fcannizzaro/stream-deck-rust-sdk" }
+stream_deck_sdk = "1.0.6"
 async-trait = "0.1.57"

@@ -530,7 +530,8 @@ dependencies = [
 [[package]]
 name = "stream_deck_sdk"
 version = "1.0.6"
-source = "git+https://github.com/fcannizzaro/stream-deck-rust-sdk#bc7a5322b26a403ef0b45f160880c72d69561a70"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c943a98a918d5d3f954a466a22945a947365d09fe18ba36e9e0fa492643e308d"
 dependencies = [
  "async-trait",
  "futures",

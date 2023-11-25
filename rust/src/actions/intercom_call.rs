@@ -27,7 +27,7 @@ impl Action for IntercomCall {
 
 		let station = match get_settings::<IntercomCallSettings>(e.payload.settings){
 			None => {
-				sd.log(format!("[{}] Couldn't fetch settings from streamdeck correctly", self.uuid()));
+				sd.log(format!("[{}] Couldn't fetch settings from streamdeck correctly", self.uuid())).await;
 				return ();
 			}
 			Some(settings) => settings.station
@@ -37,7 +37,6 @@ impl Action for IntercomCall {
 			Ok(_) => (),
 			Err(a) => {sd.log(format!("[{}] {}", self.uuid(), a)).await}
 		};
-
 
 	}
 }

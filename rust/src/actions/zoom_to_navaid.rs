@@ -27,7 +27,7 @@ impl Action for ZoomToNavaid{
 
 		let navaid = match get_settings::<ZoomToNavidSettings>(e.payload.settings){
 			None => {
-				sd.log(format!("[{}] Couldn't fetch settings from streamdeck correctly", self.uuid()));
+				sd.log(format!("[{}] Couldn't fetch settings from streamdeck correctly", self.uuid())).await;
 				return ();
 			}
 			Some(settings) => settings.navaid

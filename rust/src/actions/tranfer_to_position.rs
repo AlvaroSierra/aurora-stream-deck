@@ -27,14 +27,14 @@ impl Action for TransferToPosition{
 		let callsign = match Aurora::get_selected_traffic() {
 			Ok(callsign) => callsign,
 			Err(error) => {
-				sd.log(format!("[{}] {}", self.uuid(), error));
+				sd.log(format!("[{}] {}", self.uuid(), error)).await;
 				return ()
 			}
 		};
 
 		let station = match get_settings::<TransferToPositionSettings>(e.payload.settings) {
 			None => {
-				sd.log(format!("[{}] Couldn't fetch settings from streamdeck correctly", self.uuid()));
+				sd.log(format!("[{}] Couldn't fetch settings from streamdeck correctly", self.uuid())).await;
 				return ()
 			}
 			Some(settings) => settings.station
@@ -42,7 +42,7 @@ impl Action for TransferToPosition{
 
 		match Aurora::transfer_traffic_to(&station, &callsign){
 			Ok(_) => (),
-			Err(a) => {sd.log(format!("[{}] {}", self.uuid(), a)).await}
+			Err(a) => { sd.log(format!("[{}] {}", self.uuid(), a)).await}
 		}
 
 	}

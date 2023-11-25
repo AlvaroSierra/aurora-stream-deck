@@ -48,6 +48,18 @@ function connectElgatoStreamDeckSocket(inPort, inUUID, inRegisterEvent, inInfo, 
     else if (action === "com.alvaro.aurorastream.intercomcall"){
         intercomcall(inUUID)
     }
+    else if (action === "com.alvaro.aurorastream.release"){
+        release(inUUID)
+    }
+    else if (action === "com.alvaro.aurorastream.setwp") {
+        setwp(inUUID)
+    }
+    else if (action === "com.alvaro.aurorastream.setalt") {
+        setalt(inUUID)
+    }
+    else if (action === "com.alvaro.aurorastream.setspeed") {
+        setspeed(inUUID)
+    }
 
 }
 

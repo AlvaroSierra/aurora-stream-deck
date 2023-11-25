@@ -64,6 +64,58 @@
       ],
       "SupportedInMultiActions": false,
       "UUID": "com.alvaro.aurorastream.intercomcall"
+    },
+    {
+      "Icon": "defaultImage",
+      "Name": "Release traffic",
+      "States": [
+        {
+          "Image": "defaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "17"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "UUID": "com.alvaro.aurorastream.release"
+    },
+    {
+      "Icon": "defaultImage",
+      "Name": "Set waypoint",
+      "States": [
+        {
+          "Image": "defaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "17"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "UUID": "com.alvaro.aurorastream.setwp"
+    },
+    {
+      "Icon": "defaultImage",
+      "Name": "Set altitude",
+      "States": [
+        {
+          "Image": "defaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "17"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "UUID": "com.alvaro.aurorastream.setalt"
+    },
+    {
+      "Icon": "defaultImage",
+      "Name": "Set speed",
+      "States": [
+        {
+          "Image": "defaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "17"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "UUID": "com.alvaro.aurorastream.setspeed"
     }
   ],
   "SDKVersion": 2,

@@ -11,11 +11,11 @@ function transfertostation(inContext) {
         "        <input type=\"text\"  id=\"station\" required/>\n" +
         "    </span>\n" +
         "</div>"
-    document.getElementById('station').value = (settings.navaid === undefined ? "" : settings.navaid);
-    document.getElementById('station').addEventListener("input", navaidChanged)
+    document.getElementById('station').value = (settings.station === undefined ? "" : settings.station);
+    document.getElementById('station').addEventListener("input", stationChange)
 
-    function navaidChanged(inEvent) {
-        settings.navaid = inEvent.target.value;
+    function stationChange(inEvent) {
+        settings.station = inEvent.target.value;
         piSaveSettings();
     }
 }

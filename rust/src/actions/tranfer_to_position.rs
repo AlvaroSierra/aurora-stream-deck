@@ -1,4 +1,3 @@
-use std::io::Error;
 use aurora_api::aurora::Aurora;
 use aurora_api::AuroraAPI;
 use serde::Deserialize;
@@ -7,7 +6,6 @@ use stream_deck_sdk::events::events::KeyEvent;
 use stream_deck_sdk::get_settings;
 use stream_deck_sdk::stream_deck::StreamDeck;
 use async_trait::async_trait;
-use crate::actions::ZoomToNavaid;
 
 pub struct TransferToPosition;
 

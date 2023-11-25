@@ -13,7 +13,7 @@ impl Action for Release{
 		"com.alvaro.aurorastream.release"
 	}
 
-	async fn on_key_down(&self, e: KeyEvent, sd: StreamDeck) {
+	async fn on_key_down(&self, _e: KeyEvent, sd: StreamDeck) {
 
 		let callsign = match Aurora::get_selected_traffic() {
 			Ok(callsign) => callsign,
